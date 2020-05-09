@@ -38,7 +38,7 @@ contract("Brandooz", async function(accounts) {
   })
 
   it("should return metadata uints as strings", async function() {
-    const URI = "https://flexi-nft.netlify.app/metadata/"
+    const URI = "https://brandooz.netlify.app/metadata/"
 
     let tokenURI_uint = 0
     let tokenURI_result = await token.tokenURI(tokenURI_uint)

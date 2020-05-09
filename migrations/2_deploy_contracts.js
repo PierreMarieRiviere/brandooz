@@ -12,12 +12,7 @@ module.exports = (deployer, helper, accounts) => {
       console.log(_ + "Metadata deployed at: " + metadata.address)
 
       // Deploy Brandooz.sol
-      await deployer.deploy(
-        Brandooz,
-        "Token Name",
-        "Token Symbol",
-        metadata.address
-      )
+      await deployer.deploy(Brandooz, "Brandooz", "BDZ", metadata.address)
       let token = await Brandooz.deployed()
       console.log(_ + "Brandooz deployed at: " + token.address)
     } catch (error) {

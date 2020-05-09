@@ -1007,7 +1007,7 @@ contract Metadata {
         pure
         returns (string memory _infoUrl)
     {
-        string memory base = "https://flexi-nft.netlify.app/metadata/";
+        string memory base = "https://brandooz.netlify.app/metadata/";
         string memory id = uint2str(_tokenId);
         return base.toSlice().concat(id.toSlice());
     }
